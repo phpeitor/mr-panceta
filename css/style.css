@@ -1,3 +1,7 @@
+@view-transition{
+  navigation: auto;
+}
+
 body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p, .list-blog p {
      font-family: "Roboto",Helvetica,Arial,sans-serif;
      font-size: 13px;
@@ -322,6 +326,7 @@ body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p, .list-
 }
  div > p:last-child {
      margin-bottom: 0;
+    text-wrap: pretty;
 }
 /* ============================== LAYOUT ============================== */
  .boxed-layout .navbar-fixed-top, .boxed-layout .navbar-fixed-top, .boxed-layout header, .boxed-layout .parallax-mirror, .boxed-layout .content-parallax, .boxed-layout footer, .boxed-layout [class*="header-"], .boxed-layout #fullpage-main, .boxed-layout .container {
@@ -2422,6 +2427,7 @@ body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p, .list-
 }
  .portfolio-details h3 {
      margin-top: 0;
+     text-wrap: balance;
 }
 /* ============================== TEMPLATE - SINGLE - POST ============================== */
  .post-image, .post-video iframe {
@@ -2508,6 +2514,7 @@ body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p, .list-
 }
  .box-steps .step-item > h3 {
      font-weight: 300;
+     text-wrap: balance;
 }
  .box-steps .step-number {
      position: absolute;
@@ -2652,6 +2659,7 @@ body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p, .list-
      text-transform: uppercase;
      font-weight: 600;
      margin: 0;
+     text-wrap: balance;
 }
  .list-items .list-item p {
      line-height: 25px;
@@ -3524,6 +3532,7 @@ body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p, .list-
 }
  .block-quote, div > p.block-quote:last-child {
      margin: 25px 0;
+    text-wrap: pretty;
 }
  .quote-author {
      font-style: italic;
@@ -3665,6 +3674,7 @@ body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p, .list-
      border-bottom: 1px solid #337AB7;
      white-space: nowrap;
      padding-bottom: 10px;
+     text-wrap: balance;
 }
  .title-modern p {
      margin: 5px 0;
@@ -4168,6 +4178,7 @@ body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p, .list-
 }
  .white .countdown span, .white .fa-ul > li a, .white .icon-list .list-item i, .white .icon-box-cell label:not(.counter), .white .title-icon h2, .white h1, .white .h1, .white h2, .white .h2, .white h3, .white .h3, .white h4, .white h5, .white h6, .white i, .white .advs-box .icon, .white .advs-box h2, .white .advs-box h3 {
      color: #FAFAFA;
+     text-wrap: balance;
 }
  .white .title-base hr {
      background-color: #FAFAFA;
@@ -5090,9 +5101,11 @@ body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p, .list-
     }
      .title-modern h1, .title-modern h2, .title-modern h3 {
          white-space: normal;
+         text-wrap: balance;
     }
      .title-modern-2 h1, .title-modern-2 h2, .title-modern-2 h3 {
-         padding-right: 0;
+        padding-right: 0;
+        text-wrap: balance;
     }
      .header-title .container, .header-video .container, .header-animation .container, .header-slider .container {
          margin-top: 0 !important;
