@@ -19,6 +19,7 @@
     <link rel="stylesheet" href='./scripts/contact/contact-form.css'>
     <link rel="stylesheet" href='./css/social.stream.css'>
     <link rel="stylesheet" href="./css/skin.css">
+    <link rel="stylesheet" href="./scripts/iconsmind/line-icons.min.css">
     <script src="./scripts/script.js"></script>
 </head>
 
@@ -34,8 +35,8 @@
                                 <i class="fa fa-bars"></i>
                             </button>
                             <a class="navbar-brand" href="index.html">
-                                <img class="logo-default scroll-hide" src="images/logo.png" alt="logo" />
-                                <img class="logo-default scroll-show" src="images/logo-2.png" alt="logo" />
+                                <img class="logo-default scroll-hide" src="./images/logo.png" alt="logo" />
+                                <img class="logo-default scroll-show" src="./images/logo-2.png" alt="logo" />
                             </a>
                         </div>
                         <div class="collapse navbar-collapse">
@@ -85,7 +86,7 @@
                     <div class="col-md-6 ">
                         <h2 class="text-black text-xl anima">Una buena Panceta</h2>
                         <hr class="space s" />
-                        <p class="anima" align="justify">
+                        <p class="anima">
                             Es un acontecimiento que reúne a la familia y amigos, donde siempre hay alguien que con
                             mucho entusiasmo se toma el trabajo de liderarla y atenderla, como una muestra de afecto y
                             unión. Es así que nace Mr. Panceta , quien hace un merecido reconocimiento a estas
@@ -112,9 +113,9 @@
                                 <i class="im-fire-flame icon anima"></i>
                             </div>
                             <div class="caption-box">
-                                <h3>De lo Nuestro lo Mejor</h3>
+                                <h3>De lo Nuestro lo Mejor, nuestra Panceta</h3>
                                 <p>
-                                    Que la comida sea tu alimento y el alimento tu medicina.
+                                    Que tu comida sea tu medicina, y tu medicina el mejor sabor de nuestra cocina.
                                 </p>
                             </div>
                         </div>
@@ -171,12 +172,6 @@
                             <p>Eche un vistazo a lo mejor de nuestras comidas</p>
                         </div>
                     </div>
-                    <!--<div class="col-md-4 col-sm-6 text-center-xs">
-<hr class="space s" />
-<a href="#" class="circle-button btn btn-sm">Book a table</a><span class="space"></span>
-<hr class="space s visible-xs" />
-<a href="#" class="circle-button btn btn-sm">Full menu</a>
-</div>-->
                 </div>
                 <hr class="space xs" />
                 <div class="grid-list">
@@ -187,7 +182,7 @@
                                     <div class="caption">
                                         <i class="im-fire-flame"></i>
                                     </div>
-                                    <img src="images/gallery/image-31.jpg" alt="" />
+                                    <img src="./images/gallery/image-31.jpg" alt="" />
                                 </a>
                                 <div class="caption-bottom">
                                     <h2><a href="#">Bandeja Panceta</a></h2>
@@ -203,7 +198,7 @@
                                     <div class="caption">
                                         <i class="im-fire-flame"></i>
                                     </div>
-                                    <img src="images/gallery/image-32.jpg" alt="" />
+                                    <img src="./images/gallery/image-32.jpg" alt="" />
                                 </a>
                                 <div class="caption-bottom">
                                     <h2><a href="#">Bandeja Pollo</a></h2>
@@ -219,7 +214,7 @@
                                     <div class="caption">
                                         <i class="im-fire-flame"></i>
                                     </div>
-                                    <img src="images/gallery/image-33.jpg" alt="" />
+                                    <img src="./images/gallery/image-33.jpg" alt="" />
                                 </a>
                                 <div class="caption-bottom">
                                     <h2><a href="#">Lechon Caja China</a></h2>
@@ -235,7 +230,7 @@
                                     <div class="caption">
                                         <i class="im-fire-flame"></i>
                                     </div>
-                                    <img src="images/gallery/image-34.jpg" alt="" />
+                                    <img src="./images/gallery/image-34.jpg" alt="" />
                                 </a>
                                 <div class="caption-bottom">
                                     <h2><a href="#">Chorizos Artesanales</a></h2>
@@ -250,7 +245,7 @@
                                     <div class="caption">
                                         <i class="im-fire-flame"></i>
                                     </div>
-                                    <img src="images/gallery/image-35.jpg" alt="" />
+                                    <img src="./images/gallery/image-35.jpg" alt="" />
                                 </a>
                                 <div class="caption-bottom">
                                     <h2><a href="#">Super Panceta</a></h2>
@@ -265,7 +260,7 @@
                                     <div class="caption">
                                         <i class="im-fire-flame"></i>
                                     </div>
-                                    <img src="images/gallery/image-36.jpg" alt="" />
+                                    <img src="./images/gallery/image-36.jpg" alt="" />
                                 </a>
                                 <div class="caption-bottom">
                                     <h2><a href="#">Parrilla Manolo</a></h2>
@@ -279,7 +274,7 @@
             </div>
         </div>
         <div class="section-bg-image parallax-window text-center white" data-natural-height="850"
-            data-natural-width="1920" data-parallax="scroll" data-image-src="images/bg-23.jpg">
+            data-natural-width="1920" data-parallax="scroll" data-image-src="./images/bg-23.jpg">
             <div class="container content" id="nosotros" name="nosotros">
                 <hr class="space" />
                 <div class="row">
@@ -342,12 +337,37 @@
             <div class="container content">
                 <div class="row">
                     <div class="col-md-9">
-                        <script type='text/javascript'
-                            src='http://www.opentable.com/widget/reservation/loader?rid=347401&domain=com&type=standard&theme=wide&lang=es-MX&overlay=false&iframe=false'></script>
+                        <div id="opentable-widget-container"></div>
+                        <script type="text/javascript">
+                            (function() {
+                                var container = document.getElementById('opentable-widget-container');
+                                var iframe = document.createElement('iframe');
+                                iframe.style.width = '100%';
+                                iframe.style.height = '182px';
+                                iframe.style.border = 'none';
+                                iframe.setAttribute('title', 'Reservas OpenTable');
+                                container.appendChild(iframe);
+
+                                var doc = iframe.contentDocument || iframe.contentWindow.document;
+                                doc.open();
+                                doc.write('<!DOCTYPE html><html><head></head><body></body></html>');
+                                doc.close();
+
+                                var script = doc.createElement('script');
+                                script.type = 'text/javascript';
+                                script.src = 'http://www.opentable.com/widget/reservation/loader?rid=347401&domain=com&type=standard&theme=wide&lang=es-MX&overlay=true&iframe=false&r3uid=PV22uqjpg&newtab=false&color=1';
+                                doc.body.appendChild(script);
+                            })();
+                        </script>
                     </div>
                     <div class="col-md-3">
+
+                        <div class="icon-box-cell">
+                            <i class="im-shop-2 text-xl"></i>
+                        </div>
+
                         <div class="title-base text-left">
-                            <p>Un lugar reservado solo para ti</p>
+                            <p>Un lugar reservado solo para ti<br> Tu lugar, tu momento, tu experiencia</p>
                         </div>
                     </div>
                 </div>
@@ -356,7 +376,6 @@
         <div class="section-empty">
             <div class="container content" id="menu" name="menu">
                 <div class="title-base">
-                    <hr />
                     <h2>Nuestro Menú Completo</h2>
                     <p>Disfruta de una verdadera experiencia de carnes</p>
                 </div>
@@ -442,13 +461,13 @@
                         </div>
                     </div>
                     <div class="col-md-5">
-                        <img src="images/food-6.jpg" class="abs-image hidden-sm" alt="" />
+                        <img src="./images/food-6.jpg" class="abs-image hidden-sm" alt="" />
                     </div>
                 </div>
                 <hr class="space" />
                 <div class="row">
                     <div class="col-md-5">
-                        <img src="images/food-7.jpg" class="abs-image hidden-sm" alt="" />
+                        <img src="./images/food-7.jpg" class="abs-image hidden-sm" alt="" />
                     </div>
                     <div class="col-md-7">
                         <hr class="space m" />
@@ -570,7 +589,7 @@
             </div>
         </div>
         <div class="section-bg-image parallax-window white" data-natural-height="850" data-natural-width="1920"
-            data-parallax="scroll" data-image-src="images/bg-30.jpg">
+            data-parallax="scroll" data-image-src="./images/bg-30.jpg">
             <div class="container content" id="testimonios" name="testimonios">
                 <div class="row"></div>
                 <div class="col-md-10 col-center">
@@ -587,7 +606,7 @@
                                     data-trigger="hover">
                                     <i class="fa fa-camera-retro anima"></i>
                                     <a href="#" class="img-box lightbox anima-scale-up anima">
-                                        <img src="images/gallery/image-39.jpg" alt="" />
+                                        <img src="./images/gallery/image-39.jpg" alt="" />
                                     </a>
                                     <div class="caption">
                                         <h2>Waldir Saénz</h2>
@@ -604,7 +623,7 @@
                                     data-trigger="hover">
                                     <i class="fa fa-camera-retro anima"></i>
                                     <a href="#" class="img-box lightbox anima-scale-up anima">
-                                        <img src="images/gallery/image-40.jpg" alt="" />
+                                        <img src="./images/gallery/image-40.jpg" alt="" />
                                     </a>
                                     <div class="caption">
                                         <h2>El Gato Basombrio, Kanko Rodriguez y Peluquita Saveedra</h2>
@@ -621,7 +640,7 @@
                                     data-trigger="hover">
                                     <i class="fa fa-camera-retro anima"></i>
                                     <a href="#" class="img-box lightbox anima-scale-up anima">
-                                        <img src="images/gallery/image-41.jpg" alt="" />
+                                        <img src="./images/gallery/image-41.jpg" alt="" />
                                     </a>
                                     <div class="caption">
                                         <h2>Andres Mendoza</h2>
@@ -648,7 +667,7 @@
                         <div class="img-box adv-img adv-img-half-content" data-anima="fade-left" data-trigger="hover">
                             <i class="fa fa-camera-retro anima"></i>
                             <a href="#" class="img-box lightbox anima-scale-up anima">
-                                <img src="images/gallery/image-31.jpg" alt="" />
+                                <img src="./images/gallery/image-31.jpg" alt="" />
                             </a>
                             <div class="caption">
                                 <h2>Bandeja Panceta</h2>
@@ -663,7 +682,7 @@
                         <div class="img-box adv-img adv-img-half-content" data-anima="fade-left" data-trigger="hover">
                             <i class="fa fa-camera-retro anima"></i>
                             <a href="#" class="img-box lightbox anima-scale-up anima">
-                                <img src="images/gallery/image-37.jpg" alt="" />
+                                <img src="./images/gallery/image-37.jpg" alt="" />
                             </a>
                             <div class="caption">
                                 <h2>Bandeja Pollo</h2>
@@ -678,7 +697,7 @@
                         <div class="img-box adv-img adv-img-half-content " data-anima="fade-left" data-trigger="hover">
                             <i class="fa fa-camera-retro anima"></i>
                             <a href="#" class="img-box lightbox anima-scale-up anima">
-                                <img src="images/gallery/image-33.jpg" alt="" />
+                                <img src="./images/gallery/image-33.jpg" alt="" />
                             </a>
                             <div class="caption">
                                 <h2>Lechon Caja China</h2>
@@ -693,7 +712,7 @@
                         <div class="img-box adv-img adv-img-half-content" data-anima="fade-left" data-trigger="hover">
                             <i class="fa fa-camera-retro anima"></i>
                             <a href="#" class="img-box lightbox anima-scale-up anima">
-                                <img src="images/gallery/image-34.jpg" alt="" />
+                                <img src="./images/gallery/image-34.jpg" alt="" />
                             </a>
                             <div class="caption">
                                 <h2>Chorizos Artesanales</h2>
@@ -708,7 +727,7 @@
                         <div class="img-box adv-img adv-img-half-content" data-anima="fade-left" data-trigger="hover">
                             <i class="fa fa-camera-retro anima"></i>
                             <a href="#" class="img-box lightbox anima-scale-up anima">
-                                <img src="images/gallery/image-35.jpg" alt="" />
+                                <img src="./images/gallery/image-35.jpg" alt="" />
                             </a>
                             <div class="caption">
                                 <h2>Con P de Panceta</h2>
@@ -723,7 +742,7 @@
                         <div class="img-box adv-img adv-img-half-content" data-anima="fade-left" data-trigger="hover">
                             <i class="fa fa-camera-retro anima"></i>
                             <a href="#" class="img-box lightbox anima-scale-up anima">
-                                <img src="images/gallery/image-38.jpg" alt="" />
+                                <img src="./images/gallery/image-38.jpg" alt="" />
                             </a>
                             <div class="caption">
                                 <h2>Mesa TIS</h2>
@@ -745,7 +764,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 footer-center">
-                        <img width="180" src="images/logo-2.png" alt="" />
+                        <img width="180" src="./images/logo-2.png" />
                         <p>
                             Simplemente lo hacemos bien, siempre.<br /> We just do it right. Always.
                         </p>
@@ -763,7 +782,6 @@
             </div>
         </div>
     </footer>
-    <link rel="stylesheet" href="./scripts/iconsmind/line-icons.min.css">
     <script async src="./scripts/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./scripts/imagesloaded.min.js"></script>
     <script type="text/javascript" src="./scripts/parallax.min.js"></script>
