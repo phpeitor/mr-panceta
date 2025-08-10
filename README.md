@@ -14,7 +14,15 @@
 git clone https://github.com/phpeitor/mr-panceta.git
 cd mr-panceta
 ```
-2. **Ejecutar comando**
+2. **Crear archivo config.json con tu API key de Google Maps**
+```json
+{
+  "googleMapsApiKey": "TU_API_KEY_DE_GOOGLE_MAPS"
+}
+```
+<sub>⚠️ <strong>Importante:</strong> No compartas este archivo en repositorios públicos. Puedes agregarlo a <code>.gitignore</code> para mantenerlo privado.</sub>
+
+3. **Ejecutar comando**
 ```bash
 index.html
 ```
